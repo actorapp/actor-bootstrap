@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15A282b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="VcK-ra-3Q2">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="m51-lr-uMy">
+            <objects>
+                <navigationController id="VcK-ra-3Q2" sceneMemberID="viewController">
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ovF-j2-HQQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                        <color key="barTintColor" red="0.20784313730000001" green="0.46274509800000002" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="HGn-7D-75n" kind="relationship" relationship="rootViewController" id="3pL-eM-9pb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="els-Vu-KAl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1453" y="-115"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ehQ-mA-mFr">
+            <objects>
+                <viewController id="HGn-7D-75n" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mnj-cX-dfK"/>
+                        <viewControllerLayoutGuide type="bottom" id="2qz-xi-r3N"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AVv-zw-w9Y">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tabBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X9Z-6F-PK8">
+                                <rect key="frame" x="0.0" y="551" width="600" height="49"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <items/>
+                            </tabBar>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="X9Z-6F-PK8" firstAttribute="width" secondItem="AVv-zw-w9Y" secondAttribute="width" id="fHZ-QL-Did"/>
+                            <constraint firstItem="2qz-xi-r3N" firstAttribute="top" secondItem="X9Z-6F-PK8" secondAttribute="bottom" id="gF1-fj-o9x"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="bgr-gj-82G"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bUQ-RJ-8j5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1453" y="645"/>
+        </scene>
+    </scenes>
+</document>
