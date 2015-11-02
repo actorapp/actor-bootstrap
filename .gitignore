@@ -2,3 +2,8 @@ Podfile.lock
 app-ios/Actor.xcworkspace
 app-ios/Actor.xcodeproj/xcuserdata
 app-ios/Pods
+app-android/.gradle
+app-android/.idea
+app-android/build
+*.iml
+local.properties
