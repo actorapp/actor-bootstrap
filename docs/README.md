@@ -37,7 +37,7 @@ For downloading dependencies in ```app-web``` directory run (ignore all warrings
 npm install
 ```
 
-For building Actor Web App in ```app-web``` directory run:
+After download dependencies run to build Web App:
 ```bash
-npm run build
+gulp dist --release
 ```
