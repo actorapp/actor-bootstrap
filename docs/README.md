@@ -41,3 +41,5 @@ After download dependencies run to build Web App:
 ```bash
 gulp dist --release
 ```
+
+Now you can grab your result at ```dist``` directory. Put it to any hosting you want and you are ready.
