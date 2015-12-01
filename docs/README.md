@@ -43,3 +43,12 @@ gulp dist --release
 ```
 
 Now you can grab your result at ```dist``` directory. Put it to any hosting you want and you are ready.
+
+# iOS
+
+#### Requirements
+* XCode 7
+* [CocoaPods](https://cocoapods.org)
+
+#### Configuration
+Configuration is performed in AppDelegate.swift file.
