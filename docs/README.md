@@ -26,7 +26,7 @@ sbt build
 * [Gulp](http://gulpjs.com/)
 
 #### Configuration
-Configuration is performed in (src/index.js)[../app-web/src/index.js] file. By default it takes everything from app.json file.
+Configuration is performed in [src/index.js](../app-web/src/index.js) file. By default it takes everything from app.json file.
 You can replace endpoints in this files to point to your server
 
 #### Build
