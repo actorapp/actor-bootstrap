@@ -31,7 +31,7 @@ You can replace endpoints in this files to point to your server
 
 #### Build
 
-For downloading dependencies in ```app-web``` directory run:
+For downloading dependencies in ```app-web``` directory run (ignore all warrings: they are not affecting build):
 
 ```bash
 npm install
