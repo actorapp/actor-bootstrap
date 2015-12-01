@@ -31,6 +31,12 @@ You can replace endpoints in this files to point to your server
 
 #### Build
 
+For downloading dependencies in ```app-web``` directory run:
+
+```bash
+npm install
+```
+
 For building Actor Web App in ```app-web``` directory run:
 ```bash
 npm run build
