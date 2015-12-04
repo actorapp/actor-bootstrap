@@ -9,15 +9,52 @@ Download sources of this repository to your computer.
 # Server
 
 #### Requirements
-* [sbt](http://www.scala-sbt.org/) - build tool for server
 * Oracle JDK 8+
+* PostgreSQL 9.3+
+* Amazon Web Services with S3 enabled (for files transfer)
 
-#### Build
+#### Step 1: Create PostgreSQL user and database
 
-For building Actor Server just in ```server``` directory run:
-```bash
-sbt build
-``` 
+```
+sudo -u postgres createuser -W --superuser <user>
+sudo -u postgres createdb <dbname> -O <user>
+```
+
+#### Step 2: Create an S3 bucket (skip if you don't need files transfer).
+
+Create a bucket with CORS enabled with the following configuration:
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<CORSConfiguration xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
+    <CORSRule>
+        <AllowedOrigin>*</AllowedOrigin>
+        <AllowedMethod>GET</AllowedMethod>
+        <AllowedMethod>PUT</AllowedMethod>
+        <MaxAgeSeconds>3000</MaxAgeSeconds>
+        <AllowedHeader>*</AllowedHeader>
+    </CORSRule>
+</CORSConfiguration>
+```
+
+#### Step 3: Get Actor's activation gateway token
+
+Write to `@gatekeeper` in the [Actor Cloud](https://app.actor.im) and get the token.
+
+#### Step 4: Download the server
+
+TODO (release is in progress)
+
+#### Step 5: Configure server
+
+Copy example config:
+`cp conf/server.conf.example conf/server.conf`
+
+Put there proper values.
+
+#### Step 6: Run server
+
+`bin/actor`
 
 # Web
 
