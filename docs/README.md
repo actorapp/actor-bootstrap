@@ -41,7 +41,7 @@ Create a bucket with CORS enabled with the following configuration:
 
 Write to `@gatekeeper` in the [Actor Cloud](https://app.actor.im) and get the token.
 
-#### Step 4: Download the server
+#### Step 4: Get server
 
 TODO (release is in progress)
 
