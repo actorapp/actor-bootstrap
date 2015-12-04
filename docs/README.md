@@ -13,6 +13,10 @@ Download sources of this repository to your computer.
 * PostgreSQL 9.3+
 * Amazon Web Services with S3 enabled (for files transfer)
 
+### Installation
+
+If you are using Ubuntu 14.04, proceed to [Ubuntu install](server-install-ubuntu.md)
+
 #### Step 1: Create PostgreSQL user and database
 
 ```
