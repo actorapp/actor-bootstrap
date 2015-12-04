@@ -19,7 +19,7 @@ If you are using Ubuntu 14.04, proceed to [Ubuntu instalation guide](server/Ubun
 
 #### Step 1: [Create PostgreSQL user and database](server/Database.md)
 
-#### Step 2: [Create an S3 bucket](server/AWS.md) (skip if you don't need files transfer).
+#### Step 2: [Create an S3 bucket](server/AWS.md) (skip if you don't need files transfer)
 
 #### Step 3: [Get Actor's activation gateway token](server/Gateway.md)
 
