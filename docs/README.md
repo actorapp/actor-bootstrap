@@ -15,7 +15,7 @@ Download sources of this repository to your computer.
 
 ### Installation
 
-If you are using Ubuntu 14.04, proceed to [Ubuntu instalation guide](server-install-ubuntu.md)
+If you are using Ubuntu 14.04, proceed to [Ubuntu instalation guide](Ubuntu Server.md)
 
 #### Step 1: [Create PostgreSQL user and database](Database.md)
 
