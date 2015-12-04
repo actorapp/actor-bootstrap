@@ -32,7 +32,7 @@ TODO (release is in progress)
 Copy example config:
 `cp conf/server.conf.example conf/server.conf`
 
-Put there proper values.
+Put proper values there.
 
 #### Step 6: Run server
 
