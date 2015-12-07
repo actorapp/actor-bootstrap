@@ -25,7 +25,14 @@ If you are using Ubuntu 14.04, proceed to [Ubuntu instalation guide](server/Ubun
 
 #### Step 4: Get the server
 
-TODO (release is in progress)
+Go to the [latest release](https://github.com/actorapp/actor-bootstrap/releases/latest), download and unzip it:
+
+```
+wget https://github.com/actorapp/actor-bootstrap/releases/download/v<version>/actor-<version>.zip
+unzip actor-<version>.zip
+ln -snf actor-<version.zip> actor
+cd actor
+```
 
 #### Step 5: Configure server
 
