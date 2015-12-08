@@ -30,13 +30,10 @@ Features
 :tophat: | Semi-automatic updates without code change
 :octocat: | Community supported
 
-Contents
+Documentation
 ============
 
-* Actor Server
-* iOS App
-* Android App
-* Web App
+All documentation and tutorials are at [docs](docs/) directory.
 
 Need Help?
 ============
