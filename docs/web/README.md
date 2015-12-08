@@ -2,10 +2,10 @@
 
 #### Requirements
 * Node.js 4.2.2+. [Installation instructions](install-node.md)
-* [Gulp](http://gulpjs.com/)
+* Gulp 3.9.0+. [Installation instructions](install-gulp.md)
 
 #### Configuration
-Configuration is performed in [src/index.js](../../app-web/src/index.js) file. 
+Configuration is performed in [src/index.js](../../app-web/src/index.js) file. Read comments in example index.js.
 
 #### Build
 
