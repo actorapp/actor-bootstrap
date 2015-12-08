@@ -5,4 +5,5 @@ Building from sources is very hard. Merging updates (that we rollout weekly) is 
 # Contents
 
 * [Building and running Actor Server](server/)
+* [Building iOS App](ios/)
 * [Building and running Web App](web/)
