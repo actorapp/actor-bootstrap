@@ -13,3 +13,7 @@ sudo apt-get install postgresql postgresql-contrib
 #### Amazon RDS
 
 TODO
+
+#### Other OSes
+
+For installing on other OS follow instructions on [official PostgreSQL site](http://www.postgresql.org/).
