@@ -12,5 +12,18 @@
 </p>
 -------
 
-Bootstrap
+Actor Bootstrap
 ============
+
+###### Application and Server templates for easy start with Actor Platform.
+
+This repository contains templates for Server and Apps that can be used to build your own solutions without working with Actor Platform directly that dramatically reduce complexity of your project.
+
+ |  Features
+--------------------------|------------------------------------------------------------
+:rocket: | Saves your **hours** of understanding Actor Platform with easy to use project templates
+:wrench: | Extend and customzie functionality
+:pencil2: | Customize design of apps
+:computer: | All features of a platform is available
+:tophat: | Semi-automatic updates without code change
+:octocat: | Community supported
