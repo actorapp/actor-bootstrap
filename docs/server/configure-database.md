@@ -5,6 +5,9 @@ Open-Source Actor Server edition uses PostgreSQL Database. Other databases like 
 If you have [PostgreSQL installed](install-psql.md), you need to create a database and user with superuser privilegies:
 
 ```
-sudo -u postgres createuser -W --superuser <user>
+sudo -u postgres createuser --superuser <user>
+sudo -u postgres psql postgres
+  \password <user>
+  \q
 sudo -u postgres createdb <dbname> -O <user>
 ```
