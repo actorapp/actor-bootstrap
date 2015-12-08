@@ -16,7 +16,7 @@ If you have problems, we recommend to remove node from your system and install m
 Recommended installation instructions
 * Linux: [NodeSource binary distributions](https://github.com/nodesource/distributions)
 * Windows: [NodeJS official site](https://nodejs.org/)
-* Mac OS X: With [homebrew](http://brew.sh/) execute ```brew install node```
+* Mac OS X: With [homebrew](http://brew.sh/) execute ```brew install node4-lts```
 
 # Step 3: Checking NPM version
 Execute 
