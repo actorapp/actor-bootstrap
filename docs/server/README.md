@@ -1,12 +1,12 @@
 ### Installation
 
-If you are using Ubuntu 14.04, proceed to [Ubuntu instalation guide](Ubuntu.md)
+If you are using Ubuntu 14.04, proceed to [Ubuntu instalation guide](guide-ubuntu.md)
 
-#### Step 1: [Create PostgreSQL user and database](Database.md)
+#### Step 1: [Create PostgreSQL user and database](configure-database.md)
 
-#### Step 2: [Create an S3 bucket](AWS.md) (skip if you don't need files transfer)
+#### Step 2: [Create an S3 bucket](configure-s3.md) (skip if you don't need files transfer)
 
-#### Step 3: [Get Actor's activation gateway token](Gateway.md)
+#### Step 3: [Get Actor's activation gateway token](configure-sms-gateway.md)
 
 #### Step 4: Get the server
 
