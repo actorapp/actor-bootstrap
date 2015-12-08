@@ -1,3 +1,9 @@
+# Server
+
+### Requirements
+
+* Oracle JDK 8+ [Installation instructions](install-jdk.md)
+
 ### Installation
 
 If you are using Ubuntu 14.04, proceed to [Ubuntu instalation guide](guide-ubuntu.md)
