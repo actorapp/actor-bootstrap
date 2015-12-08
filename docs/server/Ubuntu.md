@@ -45,7 +45,7 @@ Copy example config and put proper values
 ```
 cd /etc/actor
 sudo cp server.conf.example server.conf
-nano server.conf
+sudo nano server.conf
 ```
 
 #### Step 8: Run Actor Server
