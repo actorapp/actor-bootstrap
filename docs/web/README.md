@@ -1,0 +1,24 @@
+# Web
+
+#### Requirements
+* Node.js 4.2.2+
+* [Gulp](http://gulpjs.com/)
+
+#### Configuration
+Configuration is performed in [src/index.js](../app-web/src/index.js) file. By default it takes everything from app.json file.
+You can replace endpoints in this files to point to your server
+
+#### Build
+
+For downloading dependencies in ```app-web``` directory run (ignore all warrings: they are not affecting build):
+
+```bash
+npm install
+```
+
+After download dependencies run to build Web App:
+```bash
+gulp dist --release
+```
+
+Now you can grab your result at ```dist``` directory. Put it to any hosting you want and you are ready.
