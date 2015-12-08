@@ -19,6 +19,8 @@ Actor Bootstrap
 
 This repository contains templates for Server and Apps that can be used to build your own solutions without working with Actor Platform directly that dramatically reduce complexity of your project.
 
+Features
+============
  |  Features
 --------------------------|------------------------------------------------------------
 :rocket: | Saves your **hours** of understanding Actor Platform with easy to use project templates
@@ -27,3 +29,21 @@ This repository contains templates for Server and Apps that can be used to build
 :computer: | All features of a platform is available
 :tophat: | Semi-automatic updates without code change
 :octocat: | Community supported
+
+Contents
+============
+
+* Actor Server
+* iOS App
+* Android App
+* Web App
+
+Need Help?
+============
+
+Join our [Actor Open Source](https://actor.im/oss) group and ask question at community.
+
+License
+============
+
+This project is licensed under the terms of the Apache 2.0 license. See the [LICENSE](LICENSE) file.
