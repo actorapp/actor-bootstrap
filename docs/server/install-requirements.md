@@ -2,8 +2,8 @@
 
 For running server you need
 
-#### 1. [Install Oracle JDK 8](install-jdk.md)
+#### 1. [Install Oracle JDK 8+](install-jdk.md)
 
 We recommend to use Oracle JDK, but Open JDK is also supported.
 
-#### 2. [Install PostgreSQL](install-psql.md)
+#### 2. [Install PostgreSQL 9.4+](install-psql.md)
