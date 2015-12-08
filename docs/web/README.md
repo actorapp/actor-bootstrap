@@ -1,12 +1,11 @@
 # Web
 
 #### Requirements
-* Node.js 4.2.2+
+* Node.js 4.2.2+. [Installation instructions](install-node.md)
 * [Gulp](http://gulpjs.com/)
 
 #### Configuration
-Configuration is performed in [src/index.js](../app-web/src/index.js) file. By default it takes everything from app.json file.
-You can replace endpoints in this files to point to your server
+Configuration is performed in [src/index.js](../../app-web/src/index.js) file. 
 
 #### Build
 
@@ -22,3 +21,10 @@ gulp dist --release
 ```
 
 Now you can grab your result at ```dist``` directory. Put it to any hosting you want and you are ready.
+
+#### Dev Server
+
+For development you can run:
+```bash
+gulp dev
+```
