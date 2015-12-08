@@ -2,8 +2,8 @@
 
 For running server you need
 
-#### PostgreSQL
+#### 1. [Install Oracle JDK 8](install-jdk.md)
 
-#### Amazon S3 Bucket
+We recommend to use Oracle JDK, but Open JDK is also supported.
 
-#### SMS Activation Token
+#### 2. [Install PostgreSQL](install-psql.md)
