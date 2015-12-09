@@ -26,7 +26,7 @@ Features
 :rocket: | Saves your **hours** of understanding Actor Platform with easy to use project templates
 :wrench: | Extend and customzie functionality
 :pencil2: | Customize design of apps
-:computer: | All features of a platform is available
+:computer: | All features of a platform are available
 :tophat: | Semi-automatic updates without code change
 :octocat: | Community supported
 
