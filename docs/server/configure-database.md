@@ -6,8 +6,6 @@ If you have [PostgreSQL installed](install-psql.md), you need to create a databa
 
 ```
 sudo -u postgres createuser --superuser <user>
-sudo -u postgres psql postgres
-  \password <user>
-  \q
+sudo -u postgres psql postgres --command '\password <user>'
 sudo -u postgres createdb <dbname> -O <user>
 ```
