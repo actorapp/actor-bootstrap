@@ -7,7 +7,7 @@
 
 #### Installation
 
-#### Step 1: Install Oracle JDK 8 [install-jdk] ###
+#### Step 1: Install Oracle JDK 8 [InstallJdk] ###
 
 ```
 sudo add-apt-repository ppa:webupd8team/java
