@@ -3,6 +3,7 @@
 ### Requirements
 
 * Oracle JDK 8+ [Installation instructions](install-jdk.md)
+* PostgreSQL 9.3.+ [Installation instructions](install-psql.md)
 
 ### Installation
 
