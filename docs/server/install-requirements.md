@@ -6,4 +6,4 @@ For running server you need
 
 We recommend to use Oracle JDK, but Open JDK is also supported.
 
-#### 2. [Install PostgreSQL 9.4+](install-psql.md)
+#### 2. [Install PostgreSQL 9.3+](install-psql.md)
