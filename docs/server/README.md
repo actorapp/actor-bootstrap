@@ -6,6 +6,7 @@ This section covers Actor Server instalation and configuration process.
 
 * [Requirements](install-requirements.md)
 * [Instalation on Ubuntu](guide-ubuntu.md)
+  * [Automatic Install Script](guide-ubuntu.md#install-script)
   * [Install Oracle JDK](guide-ubuntu.md#install-jdk)
   * [Install PostgreSQL](guide-ubuntu.md#install-psql)
   * [Configure Database](guide-ubuntu.md#configure-database)
