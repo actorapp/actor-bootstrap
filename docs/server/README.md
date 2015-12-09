@@ -2,7 +2,7 @@
 
 This section covers Actor Server instalation and configuration process.
 
-# Contants
+# Contents
 
 * [Requirements](install-requirements.md)
 * [Instalation on Ubuntu](guide-ubuntu.md)
@@ -15,3 +15,10 @@ This section covers Actor Server instalation and configuration process.
   * [Configure Actor Server](guide-ubuntu.md#configure-server)
   * [Run Actor Server](guide-ubuntu.md#run-server)
 * [Instalation on other operating systems](guide-other-os.md)
+  * [Requirements](guide-ubuntu.md#requirements)
+  * [Configure Database](guide-ubuntu.md#configure-database)
+  * [Create S3 Bucket](guide-ubuntu.md#configure-s3)
+  * [Get Actor Gateway token](guide-ubuntu.md#configure-sms-gateway)
+  * [Get Actor Server](guide-ubuntu.md#get-server)
+  * [Configure Actor Server](guide-ubuntu.md#configure-server)
+  * [Run Actor Server](guide-ubuntu.md#run-server)
