@@ -6,12 +6,12 @@
 * Amazon Web Services with S3 enabled (for files transfer)
 
 #### Installation
-
+<a id="install-script"></a>
 You can use automatic script which will install everything for you:
 ```
 curl -sL https://raw.githubusercontent.com/actorapp/actor-bootstrap/master/server/install-on-ubuntu.sh | sudo bash -
 ```
-Or follow manual instruction below.
+Or follow manual instruction below:
 
 <a id="install-jdk"></a>
 #### Step 1: Install Oracle JDK 8
