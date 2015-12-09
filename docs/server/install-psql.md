@@ -1,6 +1,6 @@
 # Install PostgreSQL
 
-Actor supports PostgreSQL 9.4+, Amazon RDS for PostgreSQL.
+Actor supports PostgreSQL 9.3+, Amazon RDS for PostgreSQL.
 
 #### Ubuntu 14.04
 ```bash
