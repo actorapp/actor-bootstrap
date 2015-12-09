@@ -23,6 +23,8 @@ sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`
 wget -q https://www.postgresql.org/media/keys/ACCC4CF8.asc -O - | sudo apt-key add -
 sudo apt-get update
 sudo apt-get install postgresql postgresql-contrib
+sudo update-rc.d postgresql enable
+sudo service postgresql restart
 ```
 <a id="configure-database"></a>
 #### Step 3: [Create PostgreSQL user and database](configure-database.md)
