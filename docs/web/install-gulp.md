@@ -1,5 +1,5 @@
 # Installing Gulp
-Gulp is default build system for Actor Web Application.
+Gulp is a default build system for Actor Web Application.
 
 # Step 1: Check Gulp version
 
