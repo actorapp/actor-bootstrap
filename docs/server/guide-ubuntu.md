@@ -9,7 +9,7 @@
 <a id="install-script"></a>
 You can use automatic script which will install everything for you:
 ```
-curl -sL https://raw.githubusercontent.com/actorapp/actor-bootstrap/master/server/install-on-ubuntu.sh | sudo bash -
+bash <(curl -s https://raw.githubusercontent.com/actorapp/actor-bootstrap/master/server/install-on-ubuntu.sh)
 ```
 Or follow manual instruction below:
 
