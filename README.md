@@ -19,6 +19,11 @@ Actor Bootstrap
 
 This repository contains templates for Server and Apps that can be used to build your own solutions without working with Actor Platform directly that dramatically reduce complexity of your project.
 
+Documentation
+============
+
+All documentation and tutorials are at [docs](docs/) directory.
+
 Features
 ============
  |  Features
@@ -29,11 +34,6 @@ Features
 :computer: | All features of a platform are available
 :tophat: | Semi-automatic updates without code change
 :octocat: | Community supported
-
-Documentation
-============
-
-All documentation and tutorials are at [docs](docs/) directory.
 
 Need Help?
 ============
