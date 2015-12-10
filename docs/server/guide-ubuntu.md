@@ -38,7 +38,7 @@ sudo service postgresql restart
 <a id="configure-s3"></a>
 #### Step 4: [Create an S3 bucket](configure-s3.md) (skip if you don't need files transfer) 
 <a id="configure-s3-gateway"></a>
-#### Step 5: [Get Actor's activation gateway token](configure-s3-gateway.md) 
+#### Step 5: [Get Actor's activation gateway token](configure-sms-gateway.md) 
 <a id="get-server"></a>
 #### Step 6: Get server 
 
