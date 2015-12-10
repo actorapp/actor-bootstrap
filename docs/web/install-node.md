@@ -8,7 +8,7 @@ Execute
 ```bash
 node --version
 ```
-Version should be ```v4.x.x```. We doesn't support **NodeJS 5.x**.
+Version should be ```v4.x.x```. We don't support **NodeJS 5.x**.
 
 # Step 2: Installing fresh Node.JS
 If you have problems, we recommend to remove node from your system and install manually.
