@@ -47,7 +47,7 @@ sudo -u postgres createdb actor -O actor
 
 echo "### Getting server"
 
-apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 379CE192D401AB61 
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 379CE192D401AB61 
 echo "deb https://dl.bintray.com/actor/ubuntu trusty main" | sudo tee -a /etc/apt/sources.list
 sudo apt-get update
 sudo apt-get install -y --force-yes actor
