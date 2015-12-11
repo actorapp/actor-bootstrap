@@ -4,7 +4,7 @@ Wrong installation of node.js is common case for most build errors. We **strongl
 
 # Step 1: Checking Node.JS verision if installed
 
-Execute 
+Execute
 ```bash
 node --version
 ```
@@ -15,11 +15,11 @@ If you have problems, we recommend to remove node from your system and install m
 
 Recommended installation instructions
 * Linux: [NodeSource binary distributions](https://github.com/nodesource/distributions)
-* Windows: [NodeJS official site](https://nodejs.org/)
+* Windows: [Node.JS official site](https://nodejs.org/)
 * Mac OS X: With [homebrew](http://brew.sh/) execute ```brew install node4-lts```
 
 # Step 3: Checking NPM version
-Execute 
+Execute
 ```bash
 npm --version
 ```

@@ -1,18 +1,23 @@
 {
   "name": "actor-web",
-  "version": "0.6.0",
+  "version": "0.0.0",
   "description": "Actor Web Application.",
-  "license": {
-    "type": "Apache-2.0",
-    "url": "http://opensource.org/licenses/apache2.0.php"
-  },
-  "main": "main.js",
+  "homepage": "https://actor.im/",
+  "license": "Apache-2.0",
+  "main": "src/index.js",
   "contributors": [
-    "Oleg Shilov <me@olegshilov.com>",
-    "prettynatty <fear@loathing.in>"
+    "Oleg Shilov <oleg@actor.im>",
+    "Andrew Smith <smith@actor.im>"
   ],
   "engines": {
     "node": ">=4.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/actorapp/ActorSDK-Web.git"
+  },
+  "bugs": {
+    "url": "https://github.com/actorapp/actor-platform/issues"
   },
   "ignore": [
     "**/.*",
