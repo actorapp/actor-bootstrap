@@ -1,3 +1,4 @@
+
 /*
  * Copyright (C) 2015 Actor LLC. <https://actor.im>
  *
@@ -14,8 +15,8 @@ const config = {
     'wss://front1-ws-mtproto-api-rev2.actor.im',
     'wss://front2-ws-mtproto-api-rev2.actor.im'
   ],
-  mixpanelAPIKey: '9591b090b987c2b701db5a8ef3e5055c',
-  bugsnagApiKey: 'cd24ee53326e06669a36c637b29660c3'
+  // mixpanelAPIKey: 'pasteYourKeyHere',
+  // bugsnagApiKey: 'pasteYourKeyHere'
 };
 
 // Components overriding
@@ -29,9 +30,20 @@ const components = {
   //   header: null,
   //   footer: null
   // },
+
   // dialog: {
   //   toolbar: null,
   //   compose: null,
+  //   messages: {
+  //    service: null
+  //    text: null
+  //    modern: null
+  //    photo: null
+  //    document: null
+  //    contact: null
+  //    location: null
+  //    voice: null
+  //   }
   // }
 };
 
@@ -41,7 +53,10 @@ const actions = {
   // setLoggedOut: null
 };
 
-const delegate = new ActorSDKDelegate(components, actions);
+// Translation overriding
+const l18n = {}
+
+const delegate = new ActorSDKDelegate(components, actions, l18n);
 
 const app = new ActorSDK({delegate, ...config});
 app.startApp();
