@@ -11,10 +11,10 @@ import { ActorSDK, ActorSDKDelegate } from 'actor-sdk';
 
 // Main application config
 const config = {
-  endpoints: [
-    'wss://front1-ws-mtproto-api-rev2.actor.im',
-    'wss://front2-ws-mtproto-api-rev2.actor.im'
-  ],
+  // endpoints: [
+  //   'wss://front1-ws-mtproto-api-rev2.actor.im',
+  //   'wss://front2-ws-mtproto-api-rev2.actor.im'
+  // ],
   // mixpanelAPIKey: 'pasteYourKeyHere',
   // bugsnagApiKey: 'pasteYourKeyHere'
 };
