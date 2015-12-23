@@ -1,0 +1,14 @@
+- name: Actor server start docker
+  docker:
+    name: actor-server
+    image: actor/actor-server
+    state: restarted
+    ports:
+        - "9070:9070"
+        - "9080:9080"
+        - "9090:9090"
+    links:
+        - "postgres:postgres"
+    env:
+        SECRET: defaultsecret
+        DB_PASSWORD: passw0rd

@@ -1,0 +1,14 @@
+- name: Get docker-py
+  pip: name=docker-py
+- name: Postgres docker present
+  docker:
+    pull: missing
+    name: postgres
+    image: postgres
+    state: present
+- name: Actor server present
+  docker:
+    name: actor-server
+    pull: missing
+    image: actor/actor-server
+    state: present

@@ -1,0 +1,8 @@
+- hosts: local
+  connection: local
+  roles:
+     - actor-req
+     - actor-server
+     - actor-postgres
+     - franklinkim.docker
+     - franklinkim.docker-compose

@@ -1,0 +1,7 @@
+- name: Postgres start docker
+  docker:
+    name: postgres
+    image: postgres
+    state: restarted
+    env:
+        POSTGRES_PASSWORD: passw0rd
