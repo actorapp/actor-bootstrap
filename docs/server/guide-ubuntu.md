@@ -3,7 +3,6 @@
 #### Requirements
 
 * Ubuntu 14.04
-* Amazon Web Services with S3 enabled (for files transfer)
 
 #### Installation
 <a id="install-script"></a>
@@ -25,7 +24,7 @@ sudo apt-get install oracle-java8-installer
 #### Step 2: Install PostgreSQL 9.4
 
 ```
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 379CE192D401AB61 
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 379CE192D401AB61
 sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main" >/etc/apt/sources.list.d/pgdg.list'
 wget -q https://www.postgresql.org/media/keys/ACCC4CF8.asc -O - | sudo apt-key add -
 sudo apt-get update
@@ -36,11 +35,11 @@ sudo service postgresql restart
 <a id="configure-database"></a>
 #### Step 3: [Create PostgreSQL user and database](configure-database.md)
 <a id="configure-s3"></a>
-#### Step 4: [Create an S3 bucket](configure-s3.md) (skip if you don't need files transfer) 
+#### Step 4 (Optional): [Create an S3 bucket](configure-s3.md)
 <a id="configure-s3-gateway"></a>
-#### Step 5: [Get Actor's activation gateway token](configure-sms-gateway.md) 
+#### Step 5: [Get Actor's activation gateway token](configure-sms-gateway.md)
 <a id="get-server"></a>
-#### Step 6: Get server 
+#### Step 6: Get server
 
 ```
 echo "deb https://dl.bintray.com/actor/ubuntu trusty main" | sudo tee -a /etc/apt/sources.list
@@ -48,7 +47,7 @@ sudo apt-get update
 sudo apt-get install actor
 ```
 <a id="configure-server"></a>
-#### Step 7: Configure Actor Server 
+#### Step 7: Configure Actor Server
 
 Copy example config and put proper values
 
@@ -58,7 +57,7 @@ sudo cp server.conf.example server.conf
 sudo nano server.conf
 ```
 <a id="run-server"></a>
-#### Step 8: Run Actor Server 
+#### Step 8: Run Actor Server
 
 ```
 sudo service actor restart

@@ -1,4 +1,4 @@
-# Actor Server instalation guide 
+# Actor Server instalation guide
 <a id="requirements"></a>
 #### Requirements
 
@@ -12,8 +12,8 @@ If you are using Ubuntu 14.04, proceed to [Ubuntu instalation guide](guide-ubunt
 
 <a id="configure-database"></a>
 #### Step 1: [Create PostgreSQL user and database](configure-database.md)
-<a id="configure-s3"></a>
-#### Step 2: [Create an S3 bucket](configure-s3.md) (skip if you don't need files transfer)
+<a id="configure-file-adapter"></a>
+#### Step 2: Configure file adapter: [Amazon S3](configure-s3.md) or [Local file storage](configure-local-file-storage.md)
 <a id="configure-sms-gateway"></a>
 #### Step 3: [Get Actor's activation gateway token](configure-sms-gateway.md)
 <a id="get-server"></a>

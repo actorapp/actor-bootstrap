@@ -1,8 +1,10 @@
 # Amazon Web Services configuration for Actor Server
 
-Open-Source Actor Server edition uses Amazon S3 as a file storage. Other storage adapters like local files storage or various cloud providers are supported in [enterprise edition](https://actor.im/platform/enterprise).
+Actor Server Open-Source edition uses local file storage by default, and also provides Amazon S3 file adapter. Other cloud providers are supported in [enterprise edition](https://actor.im/business).
 
-#### Bucket creation
+### Amazon S3 configuration
+
+#### Step 1: Create bucket
 
 Create a bucket with CORS enabled with the following configuration:
 
@@ -17,4 +19,22 @@ Create a bucket with CORS enabled with the following configuration:
         <AllowedHeader>*</AllowedHeader>
     </CORSRule>
 </CORSConfiguration>
+```
+
+### Step 2: Fill in config section in your server.conf
+
+```
+modules {
+  files {
+    adapter: "im.actor.server.file.s3.S3StorageAdapter"
+  }
+}
+services {
+  aws {
+    s3 {
+      default-bucket: "<bucket name>"
+      access-key: "<your aws access key>"
+      secret-key: "<your aws secret key>"
+    }
+  }
 ```
