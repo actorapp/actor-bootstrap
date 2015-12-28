@@ -10,3 +10,13 @@ services {
   }
 }
 ```
+
+You also need to configure endpoints to http-api to make local storage work. It will look different depending on your server setup. Here is configuration example:
+
+```
+http {
+  port: 443
+  host: "api.awesome.im"
+  scheme: "https"
+}
+```
