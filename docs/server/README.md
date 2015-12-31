@@ -15,6 +15,7 @@ This section covers Actor Server instalation and configuration process.
   * [Get Actor Server](guide-ubuntu.md#get-server)
   * [Configure Actor Server](guide-ubuntu.md#configure-server)
   * [Run Actor Server](guide-ubuntu.md#run-server)
+  * [Configure SSL](configure-ssl-haproxy.md)
 * [Instalation on other operating systems](guide-other-os.md)
   * [Requirements](guide-other-os.md#requirements)
   * [Configure Database](guide-other-os.md#configure-database)
@@ -23,3 +24,4 @@ This section covers Actor Server instalation and configuration process.
   * [Get Actor Server](guide-other-os.md#get-server)
   * [Configure Actor Server](guide-other-os.md#configure-server)
   * [Run Actor Server](guide-other-os.md#run-server)
+  * [Configure SSL](configure-ssl-haproxy.md)
