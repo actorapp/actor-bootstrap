@@ -15,8 +15,6 @@ You also need to configure endpoints to http-api to make local storage work. It 
 
 ```
 http {
-  port: 443
-  host: "api.awesome.im"
-  scheme: "https"
+  base-uri: "https://api.awesome.im"
 }
 ```
