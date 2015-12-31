@@ -33,8 +33,8 @@ defaults
         option  tcplog
         option  dontlognull
         timeout connect 5000
-        timeout client 240000
-        timeout server 240000
+        timeout client 2400000
+        timeout server 2400000
 listen actor-tcp
   bind *:443 ssl crt /etc/ssl/private/actor.pem
   mode tcp
