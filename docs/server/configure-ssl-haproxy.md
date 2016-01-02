@@ -38,15 +38,15 @@ defaults
 listen actor-tcp
   bind *:443 ssl crt /etc/ssl/private/actor.pem
   mode tcp
-  default_backend app
+  default_backend app-tcp
 listen actor-ws
   bind *:8443 ssl crt /etc/ssl/private/actor.pem
   mode tcp
-  default_backend app
-listen actor-ws
+  default_backend app-ws
+listen actor-api
   bind *:9443 ssl crt /etc/ssl/private/actor.pem
   mode tcp
-  default_backend app
+  default_backend app-api
 backend app-tcp
   mode tcp
   server app01 127.0.0.1:9070 check
