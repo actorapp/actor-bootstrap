@@ -56,8 +56,12 @@ cd /etc/actor
 sudo cp server.conf.example server.conf
 sudo nano server.conf
 ```
+
+<a id="secure-server"></a>
+#### Step 8: [Secure Actor Server](secure-server.md)
+
 <a id="run-server"></a>
-#### Step 8: Run Actor Server
+#### Step 9: Run Actor Server
 
 ```
 sudo service actor restart
