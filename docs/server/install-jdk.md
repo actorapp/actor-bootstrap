@@ -1,4 +1,4 @@
-# Installing JDK 8+
+# Installing Oracle JDK 8+ (OpenJDK is also supported)
 
 #### Ubuntu 14.04
 
