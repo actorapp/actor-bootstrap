@@ -22,7 +22,7 @@ Before build you must install dependencies.
 Some of them must be installed globally, what you can easily do with next command:
 
 ```bash
-npm install -g babel-cli webpack node-sass gulp eslint
+npm install -g babel-cli webpack node-sass gulp eslint gulp-image
 ```
 
 Then, install all other dependencies with:
