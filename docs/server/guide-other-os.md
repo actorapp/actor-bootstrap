@@ -17,7 +17,7 @@ If you are using Ubuntu 14.04, proceed to [Ubuntu instalation guide](guide-ubunt
 <a id="configure-sms-gateway"></a>
 #### Step 3: [Get Actor's activation gateway token](configure-sms-gateway.md)
 <a id="get-server"></a>
-#### Step 4: Get the server
+#### Step 4: Get the serverse
 
 Go to the [latest release](https://github.com/actorapp/actor-bootstrap/releases/latest), download and unzip it:
 
@@ -36,7 +36,7 @@ Copy example config:
 Put proper values there.
 
 <a id="secure-server"></a>
-#### Step 6: [Secure Actor Server](secure-server.md)
+#### Step 6: [Secure Actor Server](secure.md)
 
 <a id="run-server"></a>
 #### Step 7: Run server
