@@ -13,7 +13,7 @@ bash <(curl -s https://raw.githubusercontent.com/actorapp/actor-bootstrap/master
 Or follow manual instruction below:
 
 <a id="install-jdk"></a>
-#### Step 1: Install Oracle JDK 8
+#### Step 1: Install Oracle JDK 8 (OpenJDK is also supported)
 
 ```
 sudo add-apt-repository ppa:webupd8team/java
