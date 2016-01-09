@@ -34,7 +34,11 @@ Copy example config:
 `cp conf/server.conf.example conf/server.conf`
 
 Put proper values there.
+
+<a id="secure-server"></a>
+#### Step 6: [Secure Actor Server](secure-server.md)
+
 <a id="run-server"></a>
-#### Step 6: Run server
+#### Step 7: Run server
 
 `bin/actor`
