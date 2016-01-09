@@ -58,7 +58,7 @@ sudo nano server.conf
 ```
 
 <a id="secure-server"></a>
-#### Step 8: [Secure Actor Server](secure-server.md)
+#### Step 8: [Secure Actor Server](secure.md)
 
 <a id="run-server"></a>
 #### Step 9: Run Actor Server
