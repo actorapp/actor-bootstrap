@@ -41,13 +41,7 @@ Put proper values there.
 <a id="run-server"></a>
 #### Step 7: Run server
 
-To avoid server from stopping after ssh termination:
-Run `screen` and then click on the `spaceBar`
+To avoid server from stopping after ssh termination, run it using `nohup`:
 
 Now run Server:
-`bin/actor`
-
-Exit Screen:
-Press `CTL + A` and then `D`
-
-NB: This keeps Your server running without termination
+`nohup bin/actor`
