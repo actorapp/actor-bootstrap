@@ -42,7 +42,7 @@ Put proper values there.
 #### Step 7: Run server
 
 To avoid server from stopping after ssh termination:
-`screen` and then press the spaceBar
+Run `screen` and then click on the `spaceBar`
 
 Now run Server:
 `bin/actor`
