@@ -41,4 +41,13 @@ Put proper values there.
 <a id="run-server"></a>
 #### Step 7: Run server
 
+To avoid server from stopping after ssh termination:
+Run `screen` and then click on the `spaceBar`
+
+Now run Server:
 `bin/actor`
+
+Exit Screen:
+Press `CTL + A` and then `D`
+
+NB: This keeps Your server running without termination
