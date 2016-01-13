@@ -5,8 +5,8 @@ Create Symlink of Actor and Actor-cli
 Run the following commands
 ---------------------------------------
 
-sudo ln -s /<full>/<path>/<to>/<folder>/bin/actor /bin
-sudo ln -s /<full>/<path>/<to>/<folder>/bin/actor /usr/bin
+sudo ln -s /<full>/<path>/<to>/<folder>/bin/actor /bin </br>
+sudo ln -s /<full>/<path>/<to>/<folder>/bin/actor /usr/bin </br>
 sudo ln -s /<full>/<path>/<to>/<folder>/bin/actor-cli /usr/bin
 
 For secure communications Actor Server have to be configured with Curve25519 keys. To generate them, use actor-cli util:
