@@ -36,7 +36,7 @@ Copy example config:
 Put proper values there.
 
 <a id="secure-server"></a>
-#### Step 6: [Secure Actor Server](secure.md)
+#### Step 6: [Secure Actor Server](Secure-Other-OS.md)
 
 <a id="run-server"></a>
 #### Step 7: Run server
