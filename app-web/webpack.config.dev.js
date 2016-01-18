@@ -42,42 +42,35 @@ export default {
         exclude: /node_modules/
       }
     ],
-    loaders: [
-      // Styles
-      {
-        test: /\.(scss|css)$/,
-        loaders: [
-          'react-hot',
-          'style',
-          'css',
-          'autoprefixer?browsers=last 3 versions',
-          'sass?outputStyle=expanded&includePaths[]=' + path.resolve(__dirname, 'node_modules')
-        ]
-      },
-      // JavaScript
-      {
-        test: /\.js$/,
-        loaders: [
-          'react-hot',
-          'babel?cacheDirectory=true'
-        ],
-        exclude: /(node_modules)/
-      },
-      {
-        test: /\.json$/,
-        loaders: ['json']
-      },
-      // Assets
-      {
-        test: /\.(png|mp3|svg)$/,
-        loaders: ['file?name=assets/[name].[ext]']
-      },
-      // Fonts
-      {
-        test: /\.(ttf|eot|svg|woff|woff2)$/,
-        loaders: ['file?name=assets/fonts/[name].[ext]']
-      }
-    ]
+    loaders: [{
+      test: /\.(scss|css)$/,
+      loaders: [
+        'react-hot',
+        'style',
+        'css',
+        'autoprefixer?browsers=last 3 versions',
+        'sass?outputStyle=expanded&includePaths[]=' + path.resolve(__dirname, 'node_modules')
+      ]
+    }, {
+      test: /\.js$/,
+      loaders: [
+        'react-hot',
+        'babel?cacheDirectory=true'
+      ],
+      exclude: /(node_modules)/
+    }, {
+      test: /\.json$/,
+      loaders: ['json']
+    }, {
+      test: /\.(png|svg)$/,
+      loaders: ['file?name=assets/images/[name].[ext]']
+    }, {
+      test: /\.(mp3)$/,
+      loaders: ['file?name=assets/sounds/[name].[ext]']
+    }, {
+      test: /\.(ttf|eot|svg|woff|woff2)$/,
+      loaders: ['file?name=assets/fonts/[name].[ext]']
+    }]
   },
   plugins: [
     new webpack.DefinePlugin({

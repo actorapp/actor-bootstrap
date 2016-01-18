@@ -1,10 +1,6 @@
 
 /*
  * Copyright (C) 2015 Actor LLC. <https://actor.im>
- *
- * You can find more detailed example at main repository.
- * https://github.com/actorapp/actor-platform/tree/master/actor-sdk/sdk-web/example
- *
  */
 
 import { ActorSDK, ActorSDKDelegate } from 'actor-sdk';
