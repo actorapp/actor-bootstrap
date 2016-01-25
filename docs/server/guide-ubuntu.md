@@ -57,6 +57,10 @@ sudo cp server.conf.example server.conf
 sudo nano server.conf
 ```
 
+##### Configure iOS push notification
+
+Download Apple Push Notification service SSL Certificates and import to Keychain, export Certificates to make p12. Edit `server.conf` services/apple/push/certs section.
+
 <a id="secure-server"></a>
 #### Step 8: [Secure Actor Server](secure.md)
 
