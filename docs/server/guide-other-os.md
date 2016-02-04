@@ -19,7 +19,7 @@ If you are using Ubuntu 14.04, proceed to [Ubuntu instalation guide](guide-ubunt
 <a id="get-server"></a>
 #### Step 4: Get the serverse
 
-Go to the [latest release](https://github.com/actorapp/actor-bootstrap/releases/latest), download and unzip it:
+Go to the [latest release](https://github.com/actorapp/actor-platform/releases), download and unzip it:
 
 ```
 wget https://github.com/actorapp/actor-bootstrap/releases/download/v<version>/actor-<version>.zip
