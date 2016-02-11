@@ -2,7 +2,7 @@
 
 First of all, you need a valid certificate. After getting certificate, put it to /etc/ssl/private/actor.pem.
 
-Then install HAProxy: 
+Then install HAProxy:
 
 ```
 sudo add-apt-repository ppa:vbernat/haproxy-1.6
