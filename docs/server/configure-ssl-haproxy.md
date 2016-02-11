@@ -62,7 +62,7 @@ backend app-api
   server app01 127.0.0.1:9090 check
 ```
 
-Modify /etc/default/haproxy and set "ENABLED=1" (without qoutes).
+Set ENABLED to 1 in /etc/default/haproxy if you want the init script to start haproxy.
 
 Restart HAProxy: `sudo service haproxy restart`
 
