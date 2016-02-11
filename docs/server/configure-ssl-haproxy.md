@@ -7,7 +7,7 @@ Then install HAProxy:
 ```
 sudo add-apt-repository ppa:vbernat/haproxy-1.6
 sudo apt-get update
-sudo apt-get update
+sudo apt-get install haproxy
 ```
 
 [it is neccessary to add repository since by default apt-get in Ubuntu will install old version without SSL]
