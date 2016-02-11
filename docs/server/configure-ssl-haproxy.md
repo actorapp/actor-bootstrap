@@ -2,11 +2,15 @@
 
 First of all, you need a valid certificate. After getting certificate, put it to /etc/ssl/private/actor.pem.
 
-Then install HAProxy:
+Then install HAProxy: 
 
 ```
-sudo apt-get install haproxy
+sudo add-apt-repository ppa:vbernat/haproxy-1.6
+sudo apt-get update
+sudo apt-get update
 ```
+
+[it is neccessary to add repository since by default apt-get in Ubuntu will install old version without SSL]
 
 Edit haproxy configuration in `/etc/haproxy/haproxy.cfg` (assuming that you are configuring HAProxy on the same node as Actor itself, so we use 127.0.0.1 as a backend ip).
 
@@ -57,6 +61,8 @@ backend app-api
   mode tcp
   server app01 127.0.0.1:9090 check
 ```
+
+Modify /etc/default/haproxy and set "ENABLED=1" (without qoutes).
 
 Restart HAProxy: `sudo service haproxy restart`
 
