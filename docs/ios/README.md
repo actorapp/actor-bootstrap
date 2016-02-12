@@ -16,7 +16,30 @@ We are doing it quite often: at least once a week
 
 # Step 2: Open project in XCode
 
-Open generated **workspace** ```Actor.xcodeworkspace``` in XCode 7.
+Open generated **workspace** (file name ```Actor.xcodeworkspace```, not the ```Actor.xcodeproj```) in XCode 7. 
 
 # Step 3: Configure app according to your needs 
 Edit [AppDelegate.swift](../../app-ios/Actor/AppDelegate.swift) for SDK configuration. Read comments in the file for better understanding of how to customize app.
+
+If you are going to use self hosted solution, then you need to add at least two lines below to this file:
+
+ActorSDK.sharedActor().endpoints = ["tls://dns.name.of.your.seerver:port"]
+
+ActorSDK.sharedActor().apiPushId = your-random-number
+
+The "random-number" must be the same as "key" in the configuration of the Actor server:
+
+  apple {
+    sandbox: false
+    push {
+      certs: [
+       {
+        key = your-random-number
+        path = "/etc/actor.bootstrap.p12"
+        password = secret
+       }
+      ]
+    }
+  }
+
+currently "password" directive is mandaratory, so your .p12 certificate must be created with a password.
