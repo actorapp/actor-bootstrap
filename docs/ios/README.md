@@ -24,23 +24,29 @@ Edit [AppDelegate.swift](../../app-ios/Actor/AppDelegate.swift) for SDK configur
 If you are going to use self hosted solution, then you need to add at least two lines below to this file:
 
 ```
-ActorSDK.sharedActor().endpoints = ["tls://dns.name.of.your.seerver:port"]
+ActorSDK.sharedActor().endpoints = ["tls://dns.name.of.your.server:port"]
 ActorSDK.sharedActor().apiPushId = your-random-number
 ```
 
-The "random-number" must be the same as "key" in the configuration of the Actor server:
+The random number must be the same as the "key" in the configuration of the Actor server:
 
 ```
 services {
   apple {
-    sandbox: false
     push {
       certs: [
        {
-        key = your-random-number
-        path = "/etc/actor.bootstrap.p12"
-        password = secret
-       }
+         key: your-random-number
+         path: "/etc/actor.bootstrap.p12"
+         password: secret
+         sandbox: false
+       }, 
+	   {
+       	 key = ...
+         path: ...
+         password = ...
+         sandbox = true
+	   }
       ]
     }
   }
