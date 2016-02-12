@@ -23,12 +23,14 @@ Edit [AppDelegate.swift](../../app-ios/Actor/AppDelegate.swift) for SDK configur
 
 If you are going to use self hosted solution, then you need to add at least two lines below to this file:
 
+```
 ActorSDK.sharedActor().endpoints = ["tls://dns.name.of.your.seerver:port"]
-
 ActorSDK.sharedActor().apiPushId = your-random-number
+```
 
 The "random-number" must be the same as "key" in the configuration of the Actor server:
 
+```
   apple {
     sandbox: false
     push {
@@ -41,5 +43,6 @@ The "random-number" must be the same as "key" in the configuration of the Actor 
       ]
     }
   }
+```
 
 currently "password" directive is mandaratory, so your .p12 certificate must be created with a password.
