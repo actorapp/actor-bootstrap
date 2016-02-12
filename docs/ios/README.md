@@ -31,6 +31,7 @@ ActorSDK.sharedActor().apiPushId = your-random-number
 The "random-number" must be the same as "key" in the configuration of the Actor server:
 
 ```
+services {
   apple {
     sandbox: false
     push {
@@ -43,6 +44,7 @@ The "random-number" must be the same as "key" in the configuration of the Actor 
       ]
     }
   }
+}
 ```
 
 currently "password" directive is mandaratory, so your .p12 certificate must be created with a password.
