@@ -8,3 +8,4 @@ Building from sources is very hard. Merging updates (that we rollout weekly) is 
 * [Building and running Web App](web/)
 * [Building Native iOS App](ios/)
 * [Building Native Android App](android/)
+* [Building Desktop Apps](desktop/)
