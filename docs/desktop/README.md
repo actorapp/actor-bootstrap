@@ -46,7 +46,8 @@ Actor.app/Contents/Frameworks/Actor Helper NP.app/Contents/MacOS/Actor Helper NP
 codesign -v -f -s "3rd Party Mac Developer Application: Ivan Petrov (CDMQ33XXXX)" Actor.app/Contents/Frameworks/Actor\ Helper\ EH.app/Contents/MacOS/Actor\ Helper\ EH 
 Actor.app/Contents/Frameworks/Actor Helper EH.app/Contents/MacOS/Actor Helper EH: signed Mach-O thin (x86_64) [Actor Helper EH]
 
-codesign -v -f -s "3rd Party Mac Developer Application: Ivan Petrov (CDMQ33XXXX)" Actor.app/Contents/Frameworks/Actor\ Helper\ EH.appActor.app/Contents/Frameworks/Actor Helper EH.app: signed bundle [com.github.electron.helper.EH]
+codesign -v -f -s "3rd Party Mac Developer Application: Ivan Petrov (CDMQ33XXXX)" Actor.app/Contents/Frameworks/Actor\ Helper\ EH.app
+Actor.app/Contents/Frameworks/Actor Helper EH.app: signed bundle [com.github.electron.helper.EH]
 
 codesign -v -f -s "3rd Party Mac Developer Application: Ivan Petrov (CDMQ33XXXX)" Actor.app/Contents/Frameworks/Actor\ Helper\ NP.app
 Actor.app/Contents/Frameworks/Actor Helper NP.app: signed bundle [com.github.electron.helper.NP]
