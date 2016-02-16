@@ -1,7 +1,7 @@
 # Web
 
 #### Requirements
-* Node.js 4.2.2+. [Installation instructions](install-node.md)
+* Node.js 4.2.2+. [Installation instructions](../web/install-node.md)
 
 #### Configuration
 Configuration is performed in [src/main.js](../../app-desktop/src/main.js) file. Read comments in example main.js. If you are going to use self hosted solution, then you need to change the line below:
@@ -22,13 +22,13 @@ inside app-desktop directory. under MacOS the script will create MacOS and Linux
 
 #### Process of sigining application unders MacOS
 
-1. First of all you need an apple developer id
+1. Get Apple developer id
 
-2. You must request the developer ID certificate via KeyChain Access application and Apple Developer site (or Xcode may do it for you)
+2. Request the developer ID certificate via KeyChain Access application and Apple Developer site (or Xcode may do it for you)
 
-3. You must download certificate issued by Apple and install it to local key store
+3. Download certificate issued by Apple and install it to local key store
 
-4. Finally you need to sign your application using the Developer ID Application certificate by executing 'codesign' utility several times (to sign every dependency of Electron one by one): 
+4. Sign your application using the Developer ID Application certificate by executing 'codesign' utility several times (to sign every dependency of Electron one by one)
 
 ```
 codesign -v -f -s "3rd Party Mac Developer Application: Ivan Petrov (CDMQ33XXXX)" Actor.app/Contents/Frameworks/Actor\ Helper.app
