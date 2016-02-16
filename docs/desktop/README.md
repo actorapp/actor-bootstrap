@@ -4,10 +4,17 @@
 * Node.js 4.2.2+. [Installation instructions](../web/install-node.md)
 
 #### Configuration
-Configuration is performed in [src/main.js](../../app-desktop/src/main.js) file. Read comments in example main.js. If you are going to use self hosted solution, then you need to change the line below:
+
+Configuration is performed in [src/main.js](../../app-desktop/src/main.js) file. Read comments in example main.js. If you are going to use self hosted solution, then you need to put the address of your server and the port of your web application to the line below:
 
 ```
-const appUrl = 'https://dns.name.of.your.seerver:port/'
+const appUrl = 'https://dns.name.of.your.web.server:port/'
+```
+
+and in the case when you are not using SSL web server:
+
+```
+const appUrl = 'http://dns.name.of.your.web.server:port/'
 ```
 
 #### Build
