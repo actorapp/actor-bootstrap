@@ -1,0 +1,5 @@
+//
+//  Copyright (c) 2014-2016 Actor LLC. <https://actor.im>
+//
+
+"NSLocationWhenInUseUsageDescription" = "Determinar automáticamente su ubicación compartir con otros usuarios.";
