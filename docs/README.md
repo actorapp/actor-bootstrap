@@ -9,7 +9,7 @@ You are about to build and deploy your own messaging solution based on Actor pla
 1. Install and configure Actor Server. Result of this step is working server, avaiable everywhere in internet/your private network.
 2. Build mobile applications(Android and iOS) customized to your server endpoints. Result of this step are built binaries, avaiable for instalation on devices; you'll be able to connect to your server, authorize and send messages from mobile device. 
 3. Build and deploy web application, customized to your server endpoints. Result of this step is built web application, that you can grab and deploy as simple static site; you'll be able to connect to your server, authorize and send messages from your browser.
-# Build desktop applications(optional). For more convinence you can turn your deployed web application to desktop application. Result of this step are insalation binaries for desktop operation systems (OS X, Linux(.deb), Windows)
+4. Build desktop applications(optional). For more convinence you can turn your deployed web application to desktop application. Result of this step are insalation binaries for desktop operation systems (OS X, Linux(.deb), Windows).
 
 All these steps are decribed in topics below.
 
