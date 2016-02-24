@@ -10,9 +10,7 @@ const config = {
   // endpoints: [
   //   'wss://front1-ws-mtproto-api-rev2.actor.im',
   //   'wss://front2-ws-mtproto-api-rev2.actor.im'
-  // ],
-  // mixpanelAPIKey: 'pasteYourKeyHere',
-  // bugsnagApiKey: 'pasteYourKeyHere'
+  // ]
 };
 
 // Components overriding
