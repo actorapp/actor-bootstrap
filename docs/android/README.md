@@ -44,6 +44,24 @@ ActorSDK.sharedActor().setCustomApplicationName("My awesome messenger");
 ActorSDK.sharedActor().setAppName("My awesome messenger");
 ```
 
+#### Change application color scheme
+You can also set your fancy colors via `ActorStyle`. Colors are encoded in hex.  
+```
+ActorStyle style = ActorSDK.sharedActor().style;
+
+// Icons in lower settings section (notifications, chat, security, etc)
+style.setSettingsIconColor(Color.parseColor("#ff9a88"));
+
+// Flowing action button color
+style.setFabColor(Color.parseColor("#ff9a88"));
+
+// Backyard background color - such as separator in settings
+style.setBackyardBackgroundColor(Color.parseColor("#ff9a88"));
+
+// Phone icon in profile
+style.setRecordIconTintColor(Color.parseColor("#ff9a88"));
+```
+
 #### Receive push notification without configuring Google push service
 Android application can work as background task, receiving push notification, it can replace Google pushes, or coexist with them.
 You can enable background service this way:
