@@ -6,7 +6,7 @@ const BrowserWindow = require('browser-window');  // Module to create native bro
 const Menu = require('menu');
 const Dialog = require('dialog');
 const MenuItem = require('menu-item');
-const ipc = require('ipc');
+const ipc = require('electron').ipcMain;
 const updater = require('auto-updater');
 
 // Report crashes to our server.
@@ -258,3 +258,7 @@ if (process.platform == 'darwin' && false) {
       console.log('Update downloaded');
     });
 }
+
+setInterval(function() {
+	console.log("Window is visible: ", mainWindow.isVisible())
+}, 2000);
