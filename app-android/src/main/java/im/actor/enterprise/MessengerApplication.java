@@ -9,9 +9,7 @@ public class MessengerApplication extends ActorSDKApplication {
     @Override
     public void onConfigureActorSDK() {
         
-//        ArrayList<String> endpoints = new ArrayList<String>();
-//        endpoints.add("foo");
-//        ActorSDK.sharedActor().setEndpoints(endpoints);
+        // ActorSDK.sharedActor().setEndpoints(new String[]{"YOUR_ENDPOINT_HERE"});
 
         ActorStyle style = ActorSDK.sharedActor().style;
         // Customize your colors here
