@@ -9,3 +9,4 @@ app-android/build
 local.properties
 node_modules
 dist
+app-desktop/build
