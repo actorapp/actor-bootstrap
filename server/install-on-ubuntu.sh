@@ -11,7 +11,7 @@ then
   then
   	echo "* Ubuntu version is valid"
   else
-  	echo "This script requires Ubuntu 14.01 (trusty) but running on ${DISTRIB_ID} ${DISTRIB_RELEASE} (${DISTRIB_CODENAME})"
+  	echo "This script requires Ubuntu 14.04 (trusty) but running on ${DISTRIB_ID} ${DISTRIB_RELEASE} (${DISTRIB_CODENAME})"
   	exit 1
   fi
 else
