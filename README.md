@@ -22,7 +22,7 @@ This repository contains templates for Server and Apps that can be used to build
 Documentation
 ============
 
-All documentation and tutorials are at [docs](docs/) directory.
+All documentation and tutorials are at our [Actor Developer Hub](https://developer.actor.im/).
 
 Features
 ============
