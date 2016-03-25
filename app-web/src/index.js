@@ -10,7 +10,13 @@ const config = {
   // endpoints: [
   //   'wss://front1-ws-mtproto-api-rev2.actor.im',
   //   'wss://front2-ws-mtproto-api-rev2.actor.im'
-  // ]
+  // ],
+  // isExperimental: true,
+  // rootElement: 'actor-web-app',
+  // forceLocale: 'en-US',
+  // twitter: 'actorapp',
+  // homePage: 'http://actor.im',
+  // appName: 'Actor'
 };
 
 // Components overriding
