@@ -1,78 +1,78 @@
 import path from 'path';
 import webpack from 'webpack';
+import HtmlPlugin from 'html-webpack-plugin';
 
 export default {
   cache: true,
   debug: true,
-  devtool: 'inline-source-map',
-  hotComponents: true,
+  devtool: '#inline-source-map',
   entry: {
     app: [
-      'webpack-dev-server/client?http://localhost:3000',
-      'webpack/hot/dev-server',
-      './src/index.js'
-    ],
-    styles: [
-      'webpack-dev-server/client?http://localhost:3000',
-      'webpack/hot/dev-server',
-      './src/styles.js'
+      './src/index.js',
+      './src/styles.scss'
     ]
   },
   output: {
     path: path.join(__dirname, 'dist'),
-    publicPath: './',
+    publicPath: '/',
     filename: '[name].js',
     chunkFilename: '[chunkhash].js',
-    sourceMapFilename: '[name].map'
+    sourceMapFilename: '[file].map'
   },
   resolve: {
     modulesDirectories: ['node_modules'],
-    root: [
-      path.join(__dirname, 'src')
-    ]
+    root: [path.join(__dirname, 'src')],
+    fallback: [path.join(__dirname, 'node_modules')]
   },
   resolveLoader: {
-    modulesDirectories: ['node_modules']
+    modulesDirectories: ['node_modules'],
+    fallback: [path.join(__dirname, 'node_modules')]
   },
   module: {
     preLoaders: [
       {
         test: /\.js$/,
-        loaders: ['eslint', 'source-map'],
-        exclude: /node_modules/
+        loader: 'source-map',
+        include: [path.resolve(__dirname, 'node_modules/actor-sdk')],
+        exclude: /(node_modules)/
+      },
+      {
+        test: /\.css$/,
+        loader: 'postcss'
       }
     ],
     loaders: [{
       test: /\.(scss|css)$/,
       loaders: [
-        'react-hot',
         'style',
         'css',
-        'autoprefixer?browsers=last 3 versions',
         'sass?outputStyle=expanded&includePaths[]=' + path.resolve(__dirname, 'node_modules')
       ]
     }, {
       test: /\.js$/,
-      loaders: [
-        'react-hot',
-        'babel?cacheDirectory=true'
-      ],
+      loader: 'babel?cacheDirectory',
       exclude: /(node_modules)/
     }, {
       test: /\.json$/,
-      loaders: ['json']
+      loader: 'json'
     }, {
       test: /\.(png|svg)$/,
-      loaders: ['file?name=assets/images/[name].[ext]']
+      loader: 'file?name=assets/images/[name].[ext]'
     }, {
       test: /\.(mp3)$/,
-      loaders: ['file?name=assets/sounds/[name].[ext]']
+      loader: 'file?name=assets/sounds/[name].[ext]'
     }, {
       test: /\.(ttf|eot|svg|woff|woff2)$/,
-      loaders: ['file?name=assets/fonts/[name].[ext]']
+      loader: 'file?name=assets/fonts/[name].[ext]'
     }]
   },
+  postcss: [
+    require('autoprefixer')()
+  ],
   plugins: [
+    new HtmlPlugin({
+      template: path.resolve(__dirname, 'src/index.html')
+    }),
     new webpack.DefinePlugin({
       'process.env': {
         'NODE_ENV': JSON.stringify('development')
@@ -81,10 +81,6 @@ export default {
     new webpack.ResolverPlugin([
       new webpack.ResolverPlugin.DirectoryDescriptionFilePlugin('package.json', ['main'])
     ], ['context']),
-    new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin()
-  ],
-  eslint: {
-    configFile: './.eslintrc'
-  }
+  ]
 };

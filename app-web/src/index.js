@@ -1,4 +1,3 @@
-
 /*
  * Copyright (C) 2015 Actor LLC. <https://actor.im>
  */
@@ -56,7 +55,7 @@ const actions = {
 // Translation overriding
 const l18n = {}
 
-const delegate = new ActorSDKDelegate(components, actions, l18n);
+const delegate = new ActorSDKDelegate({ components, actions, l18n });
 
 const app = new ActorSDK({delegate, ...config});
 app.startApp();

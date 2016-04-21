@@ -20,6 +20,7 @@ gulp.task('webpack:build', (callback) => {
     if (err) {
       throw new gutil.PluginError('[webpack:build]', err);
     }
+
     gutil.log('[webpack:build]', stats.toString({
       colors: true
     }));
@@ -57,11 +58,6 @@ gulp.task('images', () => {
     .pipe(gulp.dest('./dist/assets/images'));
 });
 
-gulp.task('html', () => {
-  gulp.src(['src/index.html'])
-    .pipe(gulp.dest('./dist/'));
-});
-
 gulp.task('workers', () => {
   gulp.src([
     'node_modules/actor-sdk/build/workers/offline-worker.*',
@@ -74,11 +70,10 @@ gulp.task('workers', () => {
     .pipe(gulp.dest('./dist/'));
 });
 
-gulp.task('static', ['html', 'assets', 'workers']);
+gulp.task('static', ['assets', 'workers']);
 
 gulp.task('dev', ['static', 'webpack:dev']);
 
 gulp.task('build', ['static', 'webpack:build']);
 
-gulp.task('dist', ['build']);
 gulp.task('default', ['build']);
