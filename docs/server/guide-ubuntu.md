@@ -36,8 +36,8 @@ sudo service postgresql restart
 #### Step 3: [Create PostgreSQL user and database](configure-database.md)
 
 <a id="install-openssl"></a>
-#### Step 4: Install OpenSSL 1.0.2 and libapr1
-OpenSSL and libapr1 are required for communication with APNS(Apple Push Notification Service). We'll upgrade OpenSSL via PPA, cause 1.0.2 doesn't exist in official Ubuntu repository.
+#### Step 4: Update OpenSSL and install libapr1
+OpenSSL 1.0.2 and libapr1 are required for communication with APNS(Apple Push Notification Service). We'll upgrade OpenSSL via PPA, cause 1.0.2 doesn't exist in official Ubuntu repository for Ubuntu 14.04.
 ```
 sudo add-apt-repository ppa:0k53d-karl-f830m/openssl
 sudo apt-get update
