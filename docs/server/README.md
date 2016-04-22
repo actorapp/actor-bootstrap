@@ -9,7 +9,7 @@ This section covers Actor Server instalation and configuration process.
   * [Automatic Install Script](guide-ubuntu.md#install-script)
   * [Install Oracle JDK](guide-ubuntu.md#install-jdk)
   * [Install PostgreSQL](guide-ubuntu.md#install-psql)
-  * [Install OpenSSL](guide-ubuntu.md#install-openssl)
+  * [Update OpenSSL](guide-ubuntu.md#install-openssl)
   * [Configure Database](guide-ubuntu.md#configure-database)
   * [Create S3 Bucket (optional)](guide-ubuntu.md#configure-s3)
   * [Get Actor Gateway token](guide-ubuntu.md#configure-sms-gateway)
