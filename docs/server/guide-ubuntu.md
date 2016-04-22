@@ -34,12 +34,23 @@ sudo service postgresql restart
 ```
 <a id="configure-database"></a>
 #### Step 3: [Create PostgreSQL user and database](configure-database.md)
+
+<a id="install-openssl"></a>
+#### Step 4: Install OpenSSL 1.0.2 and libapr1
+These dependencies are required by library for APNS(Apple Push Notification Service). We'll upgrade OpenSSL via PPA, cause 1.0.2 doesn't exist in official Ubuntu repository.
+```
+sudo add-apt-repository ppa:0k53d-karl-f830m/openssl
+sudo apt-get update
+sudo apt-get install --only-upgrade openssl
+sudo apt-get install libapr1
+```
+
 <a id="configure-s3"></a>
-#### Step 4 (Optional): [Create an S3 bucket](configure-s3.md)
+#### Step 5 (Optional): [Create an S3 bucket](configure-s3.md)
 <a id="configure-s3-gateway"></a>
-#### Step 5: [Get Actor's activation gateway token](configure-sms-gateway.md)
+#### Step 6: [Get Actor's activation gateway token](configure-sms-gateway.md)
 <a id="get-server"></a>
-#### Step 6: Get server
+#### Step 7: Get server
 
 ```
 echo "deb https://dl.bintray.com/actor/ubuntu trusty main" | sudo tee -a /etc/apt/sources.list
@@ -47,7 +58,7 @@ sudo apt-get update
 sudo apt-get install actor
 ```
 <a id="configure-server"></a>
-#### Step 7: Configure Actor Server
+#### Step 8: Configure Actor Server
 
 Copy example config and put proper values
 
@@ -62,10 +73,10 @@ sudo nano server.conf
 Download Apple Push Notification service SSL Certificates and import to Keychain, export Certificates to make p12. Edit `server.conf` services/apple/push/certs section.
 
 <a id="secure-server"></a>
-#### Step 8: [Secure Actor Server](secure.md)
+#### Step 9: [Secure Actor Server](secure.md)
 
 <a id="run-server"></a>
-#### Step 9: Run Actor Server
+#### Step 10: Run Actor Server
 
 ```
 sudo service actor restart
