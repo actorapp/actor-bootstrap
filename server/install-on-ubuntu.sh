@@ -45,6 +45,13 @@ sudo -u postgres createuser --superuser actor
 sudo -u postgres psql postgres --command '\password actor'
 sudo -u postgres createdb actor -O actor
 
+echo "### Updating OpenSSL"
+
+sudo add-apt-repository ppa:0k53d-karl-f830m/openssl
+sudo apt-get update
+sudo apt-get install --only-upgrade openssl
+sudo apt-get install libapr1
+
 echo "### Getting server"
 
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 379CE192D401AB61 
