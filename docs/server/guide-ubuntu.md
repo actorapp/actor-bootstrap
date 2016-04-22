@@ -37,7 +37,7 @@ sudo service postgresql restart
 
 <a id="install-openssl"></a>
 #### Step 4: Install OpenSSL 1.0.2 and libapr1
-These dependencies are required by library for APNS(Apple Push Notification Service). We'll upgrade OpenSSL via PPA, cause 1.0.2 doesn't exist in official Ubuntu repository.
+OpenSSL and libapr1 are required for communication with APNS(Apple Push Notification Service). We'll upgrade OpenSSL via PPA, cause 1.0.2 doesn't exist in official Ubuntu repository.
 ```
 sudo add-apt-repository ppa:0k53d-karl-f830m/openssl
 sudo apt-get update
