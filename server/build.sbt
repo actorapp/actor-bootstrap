@@ -1,17 +1,17 @@
 import dsl._
 import Keys._
 
-scalaVersion := "2.11.7"
+scalaVersion := "2.11.8"
 
 resolvers += Resolver.sonatypeRepo("releases")
 resolvers += Resolver.sonatypeRepo("snapshots")
 
-libraryDependencies += "im.actor.server" % "actor-server-sdk" % "1.0.3"
+libraryDependencies += "im.actor.server" % "actor-server-sdk" % "1.0.153"
 
 enablePlugins(JavaServerAppPackaging)
 enablePlugins(JDebPackaging)
 
-name := "actor"
+name := "actor-bootstrap"
 
 maintainer := "Actor LLC <oss@actor.im>"
 packageSummary := "Messaging platform server"
@@ -24,7 +24,6 @@ rpmVendor := "actor"
 daemonUser in Linux := "actor"
 daemonGroup in Linux := (daemonUser in Linux).value
 
-bashScriptExtraDefines += """addJava "-Dactor.home=${app_home}/..""""
 bashScriptExtraDefines += """addJava "-Dlogback.configurationFile=${app_home}/../conf/logback.xml""""
 
 dockerExposedPorts := Seq(9070, 9080, 9090)

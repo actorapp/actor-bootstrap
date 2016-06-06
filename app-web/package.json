@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "Actor Web Application.",
   "homepage": "https://actor.im/",
-  "license": "Apache-2.0",
+  "license": "AGPL",
   "main": "src/index.js",
   "contributors": [
     "Oleg Shilov <oleg@actor.im>",
@@ -32,7 +32,7 @@
     "test": "eslint src/"
   },
   "dependencies": {
-    "actor-sdk": "1.0.372",
+    "actor-sdk": "1.0.397",
     "classnames": "2.2.5",
     "react": "15.1.0"
   },

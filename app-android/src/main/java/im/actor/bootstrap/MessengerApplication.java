@@ -1,4 +1,4 @@
-package im.actor.enterprise;
+package im.actor.bootstrap;
 
 import im.actor.sdk.ActorSDK;
 import im.actor.sdk.ActorSDKApplication;

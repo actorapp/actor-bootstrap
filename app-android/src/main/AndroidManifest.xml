@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="im.actor.enterprise">
+    package="im.actor.bootstrap">
 
     <uses-permission android:name="android.permission.READ_CONTACTS" />
 
     <application
-        android:name="im.actor.enterprise.MessengerApplication"
+        android:name="im.actor.bootstrap.MessengerApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name">
-        <activity android:name="im.actor.enterprise.MainActivity">
+        <activity android:name="im.actor.bootstrap.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
