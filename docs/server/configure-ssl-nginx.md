@@ -3,7 +3,7 @@
 
 ## Prerequisites:
 
-* installed `Actor server` and `Actor web-client` on same location (VPS or phisical server);
+* installed `Actor server` and `Actor web-client` on same location (VPS or physical server);
 * installed `nginx`;
 * full access to the domains of 2nd and 3nd level delegated to IP with Actor server, eg:
     * `example.im` - for access to the web-client;
