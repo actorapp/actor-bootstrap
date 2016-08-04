@@ -6,7 +6,7 @@ scalaVersion := "2.11.8"
 resolvers += Resolver.sonatypeRepo("releases")
 resolvers += Resolver.sonatypeRepo("snapshots")
 
-libraryDependencies += "im.actor.server" % "actor-server-sdk" % "1.0.153"
+libraryDependencies += "im.actor.server" % "actor-server-sdk" % "3.0.0"
 
 enablePlugins(JavaServerAppPackaging)
 enablePlugins(JDebPackaging)
