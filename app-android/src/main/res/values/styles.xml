@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppToolbarTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimaryDark">@color/primary_hovered</item>
+        <item name="android:colorPrimaryDark">@color/primary_hovered</item>
+    </style>
+
+</resources>
